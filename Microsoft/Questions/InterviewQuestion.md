@@ -18,7 +18,17 @@
 18. How do you detect if a new observation is outlier? What is bias-variance trade off ? 
 19. Describe how gradient boost works
 20. Data Mining Explain what heteroskedasticity is and how to solve it
-21. 
+21. Define and explain the differences between clustered and non-clustered indexes.
+22. What are the different ways to return the rowcount of a table?
+23. How would you improve ETL (Extract, Transform, Load) throughput?
+24. What is a neural network?
+25. How do you deal with unbalanced binary classification?
+26. What’s the difference between L1 and L2 regularization?
+27. Can you explain what REST is?
+28. What are the steps for wrangling and cleaning data before applying machine learning algorithms?
+29. How do you measure distance between data points?
+30. Define variance.
+31. Describe the differences between and use cases for box plots and histograms
 
 
 
