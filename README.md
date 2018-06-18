@@ -1,5 +1,5 @@
 # CodeSquad
 Practicing to code better
 
-- [Remove Comments](/Microsoft/remove%20comments.ipynb)
+- [Remove Comments](\[remove comments.ipynb](/Microsoft/remove%20comments.ipynb))
 
