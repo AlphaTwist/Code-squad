@@ -17,6 +17,8 @@
 17. Can you explain SVM to me?
 18. How do you detect if a new observation is outlier? What is bias-variance trade off ? 
 19. Describe how gradient boost works
+20. Data Mining Explain what heteroskedasticity is and how to solve it
+21. 
 
 
 
