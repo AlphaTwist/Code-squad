@@ -1,3 +1,6 @@
+https://www.kdnuggets.com/2017/02/17-data-science-interview-questions-answers.html
+https://www.kdnuggets.com/2017/02/17-data-science-interview-questions-answers-part-2.html
+https://www.kdnuggets.com/2017/03/17-data-science-interview-questions-answers-part-3.html
 1. Model evaluation and choice of evaluation metrics used in accenture and with Dr. Zielke
 2. How would you deal with a categorical feature with high cardinality?
 3. Describe a machine learning project you're proud of
