@@ -6,7 +6,7 @@ Practicing to code better
 - a function that takes two sorted vectors and returns a single sorted vector.
   - linked list
   - array
-- Write some code that will determine if brackets in a string are balanced
+- [Write some code that will determine if brackets in a string are balanced](/Microsoft/vallidpar.ipynb)
 - find the second largest element in a Binary Search Tree?
 - [Write a function that raises one number to another number, i.e. the pow() function](/Microsoft/pow(x_n).ipynb)
 - Split a large string into valid words and store them in a dictionary. If the string cannot be split, return false. What’s your solution’s complexity?
