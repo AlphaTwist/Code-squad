@@ -2,7 +2,7 @@
 Practicing to code better
 
 - [Remove Comments](/Microsoft/remove%20comments.ipynb)
-- Create a function that checks if a word is a palindrome.
+- [Create a function that checks if a word is a palindrome](/Microsoft/Simple%20Palindrome.ipynb)
 - a function that takes two sorted vectors and returns a single sorted vector.
 - Write some code that will determine if brackets in a string are balanced
 - find the second largest element in a Binary Search Tree?
