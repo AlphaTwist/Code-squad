@@ -187,14 +187,31 @@ Binary classification involves classifying the data into two groups, e.g. whethe
 As the target variable is not continuous, binary classification model predicts the probability of a target variable to be Yes/No. To evaluate such a model, a metric called the confusion matrix is used, also called the classification or co-incidence matrix. With the help of a confusion matrix, we can calculate important performance measures:
 
 - - 1. True Positive Rate (TPR) or Hit Rate or Recall or Sensitivity = TP / (TP + FN)
+
+       Intuitively this metric corresponds to the proportion of positive data points that are correctly considered as positive, with respect to all positive data points. In other words, the higher TPR, the fewer positive data points we will miss.
+
     2. False Positive Rate(FPR) or False Alarm Rate = 1 - Specificity = 1 - (TN / (TN + FP))
+
+       Intuitively this metric corresponds to the proportion of negative data points that are mistakenly considered as positive, with respect to all negative data points. In other words, the higher FPR, the more negative data points will be missclassified.
+
     3. Accuracy = (TP + TN) / (TP + TN + FP + FN)
+
     4. Error Rate = 1 – accuracy or (FP + FN) / (TP + TN + FP + FN)
+
     5. Precision = TP / (TP + FP)
+
     6. F-measure: 2 / ( (1 / Precision) + (1 / Recall) )
+
     7. ROC (Receiver Operating Characteristics) = plot of FPR vs TPR
+
     8. AUC (Area Under the Curve)
+
     9. Kappa statistics
+
+    - We predict 0 while we should have the class is actually 0: this is called a **True Negative**, i.e. we correctly predict that the class is negative (0). For example, an antivirus did not detect a harmless file as a virus .
+    - We predict 0 while we should have the class is actually 1: this is called a **False Negative**, i.e. we incorrectly predict that the class is negative (0). For example, an antivirus failed to detect a virus.
+    - We predict 1 while we should have the class is actually 0: this is called a **False Positive**, i.e. we incorrectly predict that the class is positive (1). For example, an antivirus considered a harmless file to be a virus.
+    - We predict 1 while we should have the class is actually 1: this is called a **True Positive**, i.e. we correctly predict that the class is positive (1). For example, an antivirus rightfully detected a virus.
 
 You can find more details about these measures here: [The Best Metric to Measure Accuracy of Classification Models](https://www.kdnuggets.com/2016/12/best-metric-measure-accuracy-classification-models.html).
 
@@ -1062,7 +1079,7 @@ Data scientists do not let their human emotions overrun their logical reasoning.
 - Ensure that the results are repeatable with near similar results
 - Examine whether the results reflect local maxima/minima or global maxima/minima
 
- 
+
 
 One common way to achieve the above guidelines is through A/B testing, where both the versions of algorithm are kept running on similar environment for a considerably long time and real-life input data is randomly split between the two. This approach is particularly common in Web Analytics. 
 
@@ -1109,7 +1126,6 @@ One common way to achieve the above guidelines is through A/B testing, where bot
 
    in Wikipedia. 
 
-   
 
   Fig 4: Precision and Recall
 
@@ -1145,19 +1161,19 @@ One common way to achieve the above guidelines is through A/B testing, where bot
   - Ensure that the results are repeatable with near similar results
   - Examine whether the results reflect local maxima/minima or global maxima/minima
 
-   
+
 
   One common way to achieve the above guidelines is through A/B testing, where both the versions of algorithm are kept running on similar environment for a considerably long time and real-life input data is randomly split between the two. This approach is particularly common in Web Analytics. 
 
   ### Explain what precision and recall are. How do they relate to the ROC curve?
 
-  1. What percent of your predictions were correct? 
+    1. What percent of your predictions were correct? 
      You answer: the "accuracy" was (9,760+60) out of 10,000 = 98.2%
-  2. What percent of the positive cases did you catch? 
+    2. What percent of the positive cases did you catch? 
      You answer: the "recall" was 60 out of 100 = 60%
-  3. What percent of positive predictions were correct? 
+    3. What percent of positive predictions were correct? 
      You answer: the "precision" was 60 out of 200 = 30%
-  4. ​
+    4. ​
 
   ROC curve represents a relation between sensitivity (RECALL) and specificity(NOT PRECISION) and is commonly used to measure the performance of binary classifiers. However, when dealing with highly skewed datasets, [Precision-Recall (PR) curves](http://pages.cs.wisc.edu/~jdavis/davisgoadrichcamera2.pdf) give a more representative picture of performance.
 
@@ -1292,7 +1308,7 @@ Ioannidis noted that in order for a research finding to be reliable, it should h
 - Greater flexibility in designs, definitions, outcomes, and analytical modes
 - Minimal bias due to financial and other factors (including popularity of that scientific field)
 
- 
+
 
 Unfortunately, too often these rules were violated, producing irreproducible results. For example, S&P 500 index was found to be strongly related to Production of butter in Bangladesh (from 19891 to 1993) (
 
@@ -1321,7 +1337,7 @@ Several methods can be used to avoid "overfitting" the data
 - Adjusting the [False Discovery Rate](http://en.wikipedia.org/wiki/False_discovery_rate)
 - Using the [reusable holdout method](https://www.kdnuggets.com/2015/08/feldman-avoid-overfitting-holdout-adaptive-data-analysis.html) - a breakthrough approach proposed in 2015
 
- 
+
 
 Good data science is on the leading edge of scientific understanding of the world, and it is data scientists responsibility to avoid overfitting data and educate the public and the media on the dangers of bad data analysis. 
 
@@ -1333,7 +1349,6 @@ See also
 - [11 Clever Methods of Overfitting and how to avoid them](https://www.kdnuggets.com/2015/01/clever-methods-overfitting-avoid.html)
 - [Tag: Overfitting](https://www.kdnuggets.com/tag/overfitting)
 
- 
 
 ------
 
@@ -1441,7 +1456,7 @@ An outlier is a point of data that lies over 1.5 IQRs below the first quartile (
 - High = (Q3) + 1.5 IQR
 - Low = (Q1) - 1.5 IQR
 
- 
+
 
 Tukey Method
 
@@ -1452,7 +1467,7 @@ It uses interquartile range to filter very large or very small numbers. It is pr
 - Low outliers = Q1 - 1.5(Q3 - Q1) = Q1 - 1.5(IQR)
 - High outliers = Q3 + 1.5(Q3 - Q1) = Q3 + 1.5(IQR)
 
- 
+
 
 Anything outside of the fences is an outlier. 
 
@@ -1521,7 +1536,7 @@ Recommender System
 - Last.fm creates a "station" of recommended songs by observing what bands and individual tracks the user has listened to on a regular basis and comparing those against the listening behavior of other users. Last.fm will play tracks that do not appear in the user's library, but are often played by other users with similar interests. As this approach leverages the behavior of users, it is an example of a collaborative filtering technique.
 - Pandora uses the properties of a song or artist (a subset of the 400 attributes provided by the Music Genome Project) in order to seed a "station" that plays music with similar properties. User feedback is used to refine the station's results, deemphasizing certain attributes when a user "dislikes" a particular song and emphasizing other attributes when a user "likes" a song. This is an example of a content-based approach.
 
- 
+
 
 Here is a good 
 
@@ -1571,7 +1586,7 @@ Here are useful KDnuggets resources:
 - [Top 30 Social Network Analysis and Visualization Tools](https://www.kdnuggets.com/2015/06/top-30-social-network-analysis-visualization-tools.html)
 - [Tag: Data Visualization](https://www.kdnuggets.com/tag/data-visualization)
 
- 
+
 
 There are many ways to representing more than 2 dimensions in a chart. 3rd dimension can be shown with a 3D scatter plot which can be rotate. You can use color, shading, shape, size. Animation can be used effectively to show time dimension (change over time). 
 
