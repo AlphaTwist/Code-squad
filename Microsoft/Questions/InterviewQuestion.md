@@ -23,7 +23,8 @@ def biasedCoin():
    return int(random() < 0.2)
 # with high probability we will get a number that is close to 2000. I got 2058.   
 sum(biasedCoin() for i in range(10000))   
-# we should see a value that is approximately 5000. Indeed, when I tried it, I got 4982, which is evidence that fairCoin(biasedCoin) returns 1 with probability 1/2 (although I already gave a proof!)
+# we should see a value that is approximately 5000. Indeed, when I tried it, I got 4982, 
+which is evidence that fairCoin(biasedCoin) returns 1 with probability 1/2 (although I already gave a proof!)
 sum(fairCoin(biasedCoin) for i in range(10000))
 
 ```
