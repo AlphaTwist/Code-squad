@@ -11,6 +11,25 @@ https://www.kdnuggets.com/2017/03/17-data-science-interview-questions-answers-pa
 
 This is originally von Neumann’s clever idea. If we have a biased coin (i.e. a coin that comes up heads with probability different from 1/2), we can simulate a fair coin by tossing pairs of coins until the two results are different. Given that we have different results, the probability that the first is “heads” and the second is “tails” is the same as the probability of “tails” then “heads”. So if we simply return the value of the first coin, we will get “heads” or “tails” with the same probability, i.e. 1/2.
 
+'''
+def fairCoin(biasedCoin):
+   coin1, coin2 = 0,0
+   while coin1 == coin2:
+      coin1, coin2 = biasedCoin(), biasedCoin()
+   return coin1
+ 
+from random import random
+def biasedCoin():
+   return int(random() < 0.2)
+# with high probability we will get a number that is close to 2000. I got 2058.   
+sum(biasedCoin() for i in range(10000))   
+# we should see a value that is approximately 5000. Indeed, when I tried it, I got 4982, which is evidence that fairCoin(biasedCoin) returns 1 with probability 1/2 (although I already gave a proof!)
+sum(fairCoin(biasedCoin) for i in range(10000))
+
+'''
+
+
+
 One might wonder how many calls to biasedCoin we expect to make before the function returns. One can recognize the experiment as a geometric distribution and use the known expected value, but it is short so here is a proof. Let s be the probability of seeing two different outcomes in the biased coin flip, and t the expected number of trials until that happens. If after two flips we see the same outcome (HH or TT), then by independence the expected number of flips we need is unchanged. Hence
 
 t = 2s + (1-s)(2 + t)
