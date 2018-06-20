@@ -7,7 +7,15 @@ https://www.kdnuggets.com/2017/03/17-data-science-interview-questions-answers-pa
 4. Pick a machine learning algorithm of your choice and describe it to me
 5. Describe an ROC chart
 6. Describe a decision tree
-7. Generate a fair coin from a biased one.
+7. *Generate a fair coin from a biased one.*
+This is originally von Neumann’s clever idea. If we have a biased coin (i.e. a coin that comes up heads with probability different from 1/2), we can simulate a fair coin by tossing pairs of coins until the two results are different. Given that we have different results, the probability that the first is “heads” and the second is “tails” is the same as the probability of “tails” then “heads”. So if we simply return the value of the first coin, we will get “heads” or “tails” with the same probability, i.e. 1/2.
+
+One might wonder how many calls to biasedCoin we expect to make before the function returns. One can recognize the experiment as a geometric distribution and use the known expected value, but it is short so here is a proof. Let s be the probability of seeing two different outcomes in the biased coin flip, and t the expected number of trials until that happens. If after two flips we see the same outcome (HH or TT), then by independence the expected number of flips we need is unchanged. Hence
+
+t = 2s + (1-s)(2 + t)
+
+Simplifying gives t = 2/s, and since we know s = 2p(1-p) we expect to flip the coin \frac{1}{p(1-p)} times.
+
 8. Generate 7 integers with equal probability from a function which returns 1/0 with probability p and (1-p)
 9. What are the ROC curve and the meaning of sensitivity, specificity, confusion matrix  
 11. How to best select a representative sample of search quieres from 5 miliion serach queries
