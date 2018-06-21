@@ -29,3 +29,9 @@ Practicing to code better
 - The 2 sum problem, common  
 - **Set the next node of a Binary Tree, being the node to its left on the same height.**  
 - ​Find the maximum of sub sequence in an integer list.
+
+Central Limit Theorem - How to determine if a distribution is normal).
+
+There are 6 marbles in a bag - 1 is white. You reach in the  bag 100 times. After drawing a marble, it is placed back in the bag. What is the probability of drawing the white marble at least once?
+
+
