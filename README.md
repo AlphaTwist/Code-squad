@@ -7,7 +7,7 @@ Practicing to code better
   - linked list
   - array
   - How do you merge two sorted lists of numbers without using any extra memory. the second list has enough memory allocated to fit both lists entirely. 
-- [Write some code that will determine if brackets in a string are balanced](/Microsoft/vallidpar.ipynb)
+- [Write some code that will determine if brackets in a string are balanced](/Microsoft/validpar.ipynb)
 - [Write a function that raises one number to another number, i.e. the pow() function](/Microsoft/pow(x_n).ipynb)
 - **Split a large string into valid words and store them in a dictionary. If the string cannot be split, return false. What’s your solution’s complexity?**
 - https://www.geeksforgeeks.org/microsoft-interview-experience-set-55-for-software-engineer-2/
