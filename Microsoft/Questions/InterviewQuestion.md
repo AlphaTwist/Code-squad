@@ -209,15 +209,19 @@ For model building, some models are resistant to outliers (e.g. [tree-based appr
   2. The [F1 Score](https://en.wikipedia.org/wiki/F1_score) is the harmonic mean of precision and recall. It is commonly used in text processing when an aggregate measure is sought.
   3. [Cohen’s Kappa](https://en.wikipedia.org/wiki/Cohen%27s_kappa) is an evaluation statistic that takes into account how much agreement would be expected by chance.
 
-1. What’s the difference between L1 and L2 regularization?
-2. Can you explain what REST is?
-3. What are the steps for wrangling and cleaning data before applying machine learning algorithms?
-4. How do you measure distance between data points?
-5. Define variance.
-6. Describe the differences between and use cases for box plots and histograms
+- **How do you measure distance between data points?**
+
+https://dzone.com/articles/machine-learning-measuring
+
+1. ​
+2. What’s the difference between L1 and L2 regularization?
+3. Can you explain what REST is?
+4. What are the steps for wrangling and cleaning data before applying machine learning algorithms?
+5. ​
+6. Define variance.
+7. Describe the differences between and use cases for box plots and histograms
 
 
-1. How would you improve ETL (Extract, Transform, Load) throughput?
-2. What is a neural network?
+1. What is a neural network?
 
 
