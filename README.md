@@ -4,9 +4,6 @@ Practicing to code better
 - [Remove Comments](/Microsoft/remove%20comments.ipynb)
 - [Create a function that checks if a word is a palindrome](/Microsoft/Simple%20Palindrome.ipynb)
 - a function that takes two sorted vectors and returns a single sorted vector.
-  - linked list
-  - array
-  - How do you merge two sorted lists of numbers without using any extra memory. the second list has enough memory allocated to fit both lists entirely. 
 - [Write some code that will determine if brackets in a string are balanced](/Microsoft/validpar.ipynb)
   - [More complex parenthesis problem](/Microsoft/Validparstr.ipynb)
 - [Write a function that raises one number to another number, i.e. the pow() function](/Microsoft/pow(x_n).ipynb)
@@ -32,6 +29,9 @@ Practicing to code better
 - Find the maximum of sub sequence in an integer list.
 - [Implement stack](/Microsoft/Stack.ipynb) 
 - [Delete a node from linkedlist and delete all alternative nodes in linkedlist](/Microsoft/DelNode.ipynb) 
+- [add two number without +](/Microsoft/SumofTwoIntegers.ipynb) 
+- [Maxium product of three numbers](/Microsoft/MaximumProductofThreeNumbers.ipynb) 
+- [integre break problem](/Microsoft/intbreak.ipynb) 
 
 Central Limit Theorem - How to determine if a distribution is normal).
 
