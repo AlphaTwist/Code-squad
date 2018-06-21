@@ -28,4 +28,4 @@ Practicing to code better
 - **Check if a tree is BST or not.**  
 - The 2 sum problem, common  
 - **Set the next node of a Binary Tree, being the node to its left on the same height.**  
-- ​
+- ​Find the maximum of sub sequence in an integer list.
