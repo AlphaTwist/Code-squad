@@ -47,16 +47,84 @@ Simplifying gives t = 2/s, and since we know s = 2p(1-p) we expect to flip the c
 18. Describe how gradient boost works
 19. Data Mining Explain what heteroskedasticity is and how to solve it
 20. Define and explain the differences between clustered and non-clustered indexes.
-21. What are the different ways to return the rowcount of a table?
-22. How would you improve ETL (Extract, Transform, Load) throughput?
-23. What is a neural network?
-24. How do you deal with unbalanced binary classification?
-25. What’s the difference between L1 and L2 regularization?
-26. Can you explain what REST is?
-27. What are the steps for wrangling and cleaning data before applying machine learning algorithms?
-28. How do you measure distance between data points?
-29. Define variance.
-30. Describe the differences between and use cases for box plots and histograms
+
+
+
+
+- **What are the different ways to return the rowcount of a table?**
+
+**Method 1:**
+
+*Query:*
+
+```
+SELECT COUNT(*) FROM Transactions 
+```
+
+*Comments:*
+
+Performs a full table scan. Slow on large tables.
+
+**Method 2:**
+
+*Query:*
+
+```SQL
+SELECT CONVERT(bigint, rows) 
+FROM sysindexes 
+WHERE id = OBJECT_ID('Transactions') 
+AND indid < 2 
+```
+
+*Comments:*
+
+Fast way to retrieve row count. Depends on statistics and is inaccurate.
+
+Run DBCC UPDATEUSAGE(Database) WITH COUNT_ROWS, which can take significant time for large tables.
+
+**Method 3:**
+
+*Query:*
+
+```sql
+SELECT CAST(p.rows AS float) 
+FROM sys.tables AS tbl 
+INNER JOIN sys.indexes AS idx ON idx.object_id = tbl.object_id and
+idx.index_id < 2 
+INNER JOIN sys.partitions AS p ON p.object_id=CAST(tbl.object_id AS int) 
+AND p.index_id=idx.index_id 
+WHERE ((tbl.name=N'Transactions' 
+AND SCHEMA_NAME(tbl.schema_id)='dbo')) 
+```
+
+*Comments:*
+
+The way the SQL management studio counts rows (look at table properties, storage, row count). Very fast, but still an approximate number of rows.
+
+**Method 4:**
+
+*Query:*
+
+```sql
+SELECT SUM (row_count) 
+FROM sys.dm_db_partition_stats 
+WHERE object_id=OBJECT_ID('Transactions')    
+AND (index_id=0 or index_id=1); 
+```
+
+*Comments:*
+
+Quick (although not as fast as method 2) operation and equally important, reliable.
+
+1. How would you improve ETL (Extract, Transform, Load) throughput?
+2. What is a neural network?
+3. How do you deal with unbalanced binary classification?
+4. What’s the difference between L1 and L2 regularization?
+5. Can you explain what REST is?
+6. What are the steps for wrangling and cleaning data before applying machine learning algorithms?
+7. How do you measure distance between data points?
+8. Define variance.
+9. Describe the differences between and use cases for box plots and histograms
 
 
 
