@@ -24,6 +24,7 @@ Practicing to code better
 - Giving an integer and return the maximum product of the numbers which sums up to the given number.
 - [**Check if a tree is BST or not.** ](/Microsoft/BST.ipynb  )
 - **Set the next node of a Binary Tree, being the node to its left on the same height.**  
+- https://www.geeksforgeeks.org/connect-nodes-at-same-level/
 - [Find the maximum of sub sequence in an integer list.](/Microsoft/LIS.ipynb)  
 - [Implement stack](/Microsoft/Stack.ipynb) 
 - [Delete a node from linkedlist and delete all alternative nodes in linkedlist](/Microsoft/DelNode.ipynb) 
