@@ -17,14 +17,13 @@ Practicing to code better
 - **Given a BST and key find the node that is nearest but of lower value than key.** 
 - [**Given an array that contains 1 missing and 1 duplicate, find both.**](/Microsoft/inttobin.ipynb)  
 - [**How do you detect if a linked list has a loop, without using any extra memory**](/Microsoft/cyclelinkedlist.ipynb) 
-- Write a function that takes an array of integers and a target integer and returns true if any two integers in the array add up to the target integer. After probing, it was stated that the integers are signed. 
+- [Two Sums : Write a function that takes an array of integers and a target integer and returns true if any two integers in the array add up to the target integer. After probing, it was stated that the integers are signed.]()(/Microsoft/TwoSum.ipynb)  
 - **Write an algorithm to check if 2 rectangles are overlapping given their left and right edge coordinates**
 - Given a list of integers, create a list containing only unique instances of those integers.  
 - **Find the second smallest element of the BST**  
 - how to read a file in log n time  
 - **Giving an integer and return the maximum product of the numbers which sums up to the given number.**
 - **Check if a tree is BST or not.**  
-- The 2 sum problem, common  
 - **Set the next node of a Binary Tree, being the node to its left on the same height.**  
 - Find the maximum of sub sequence in an integer list.
 - [Implement stack](/Microsoft/Stack.ipynb) 
