@@ -1,3 +1,9 @@
+https://databricks.com/session/deep-learning-for-domain-specific-entity-extraction-from-unstructured-text
+https://channel9.msdn.com/Events/Cortana-Analytics-Suite/CA-Suite-Workshop-10-11SEP15/Tutorial-Natural-Language-Understanding-Using-Cortana-Analytics
+https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics/?v=18.05
+https://www.slideshare.net/slideshow/embed_code/key/9KZuIP6BXxYNTh
+
+
 Key Responsibilities:
 - Design and development of machine learning based text analytics solutions.
 - Consulting internal and external customers to use Microsoft Azure Machine Learning. 
