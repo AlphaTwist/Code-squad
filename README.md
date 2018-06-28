@@ -35,6 +35,7 @@ Practicing to code better
 
 # Tree
 - [DFS Tree traversal](/Microsoft/BinaryTreeTraversalDFS.ipynb)
+- [BFS Tree traversal](/Microsoft/BinaryTreeTraversalBFS.ipynb)
 - [Second largest/snallest item in a binary search tree](/Microsoft/secLargeMinBST.ipynb) 
 - [Check if a tree is BST or not](/Microsoft/BST.ipynb  )  
  - [ValidateBinarySearchTree](/Microsoft/ValidateBinarySearchTree.ipynb)
