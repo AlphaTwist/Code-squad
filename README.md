@@ -34,7 +34,7 @@ Practicing to code better
 - [Implement stack](/Microsoft/Stack.ipynb) 
 
 # Tree
-## DFS Tree traversal
+## [DFS Tree traversal](/Microsoft/BinaryTreeTraversalDFS.ipynb)
 inorder left root right
 ```
 Algorithm Inorder(tree)
