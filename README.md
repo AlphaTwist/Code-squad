@@ -39,6 +39,11 @@ Practicing to code better
 - [Second largest/snallest item in a binary search tree](/Microsoft/secLargeMinBST.ipynb) 
 - [Check if a tree is BST or not](/Microsoft/BST.ipynb  )  
  - [ValidateBinarySearchTree](/Microsoft/ValidateBinarySearchTree.ipynb)
+- [Construct Binary Tree from Preorder and Inorder Traversal](/Microsoft/ConBSTfromPreinorderlist.ipynb)
+- [Binary Tree Zigzag Level Order/BFS Traversal](/Microsoft/zigzagBSF.ipynb) 
+- [Populating Next Right Pointers in Each Node IN BALANCED BST](/Microsoft/pointpointertorightinbstBal.ipynb) 
+- [Populating Next Right Pointers in Each Node (not balanced)](/Microsoft/pointpointertorightinbstBal.ipynb) 
+- [clone graph](/Microsoft/clonegraph.ipynb) 
 - **Given a BST and key find the node that is nearest but of lower value than key.** 
 - **Set the next node of a Binary Tree, being the node to its left on the same height.**  
 
