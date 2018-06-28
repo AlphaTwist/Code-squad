@@ -22,6 +22,7 @@ Practicing to code better
 - [Given an array that contains 1 missing and 1 duplicate, find both.](/Microsoft/inttobin.ipynb)  
 - Given a list of integers, create a list containing only unique instances of those integers.  
 - [Find the maximum of sub sequence in an integer list.](/Microsoft/LIS.ipynb) 
+- [Score  brackets](/Microsoft/scoreofparentheses.ipynb)
 
 # Linked List
 - [How do you detect if a linked list has a loop](/Microsoft/cyclelinkedlist.ipynb) 
@@ -34,7 +35,8 @@ Practicing to code better
 
 # Tree
 - [Second largest/snallest item in a binary search tree](/Microsoft/secLargeMinBST.ipynb) 
-- [Check if a tree is BST or not](/Microsoft/BST.ipynb  )
+- [Check if a tree is BST or not](/Microsoft/BST.ipynb  )  
+ - [ValidateBinarySearchTree](/Microsoft/ValidateBinarySearchTree.ipynb)
 - **Given a BST and key find the node that is nearest but of lower value than key.** 
 - **Set the next node of a Binary Tree, being the node to its left on the same height.**  
 
