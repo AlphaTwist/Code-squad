@@ -34,28 +34,7 @@ Practicing to code better
 - [Implement stack](/Microsoft/Stack.ipynb) 
 
 # Tree
-## [DFS Tree traversal](/Microsoft/BinaryTreeTraversalDFS.ipynb)
-inorder left root right
-```
-Algorithm Inorder(tree)
-   1. Traverse the left subtree, i.e., call Inorder(left-subtree)
-   2. Visit the root.
-   3. Traverse the right subtree, i.e., call Inorder(right-subtree)
-```
-preorder root left right
-```
-Algorithm Preorder(tree)
-   1. Visit the root.
-   2. Traverse the left subtree, i.e., call Preorder(left-subtree)
-   3. Traverse the right subtree, i.e., call Preorder(right-subtree) 
-```
-post order left right root
-```
-Algorithm Postorder(tree)
-   1. Traverse the left subtree, i.e., call Postorder(left-subtree)
-   2. Traverse the right subtree, i.e., call Postorder(right-subtree)
-   3. Visit the root.
-```
+- [DFS Tree traversal](/Microsoft/BinaryTreeTraversalDFS.ipynb)
 - [Second largest/snallest item in a binary search tree](/Microsoft/secLargeMinBST.ipynb) 
 - [Check if a tree is BST or not](/Microsoft/BST.ipynb  )  
  - [ValidateBinarySearchTree](/Microsoft/ValidateBinarySearchTree.ipynb)
