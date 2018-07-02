@@ -66,6 +66,23 @@ In the reduce phase, we will collect all such results from all users and then ad
 
 # Programming Python
 - Check if a binary tree is a mirror image on left and right sub-trees.
+- use stack to sort given data
+- given an positive integer list, find the min integer that is missing 
+- add two number without plus sign
+- There are several words in a file. Get the occurrence of every word and sort it based on the  occurrence, if more than one word is having same occurrence than sort it alphabetically.
+  ```
+  collector = {}
+  import operator
+  from operator import itemgetter
+  with open('test.txt') as fh:
+      for lines in fh:
+            lines = lines.split()
+          for words in lines:
+              words = words.lower()
+              collector[words] = collector.get(words,0) + 1
+            
+  coll_sort = sorted(collector.items(),key=lambda x:(-x[1],x[0]))
+  ```
 - Check word is pallindrome, string is pallindrome
 - find anagrams in a list and print out list of anagrams.
 - fibonacci sequence, recursive and iterative model with complexity analysis 
