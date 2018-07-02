@@ -69,6 +69,21 @@ In the reduce phase, we will collect all such results from all users and then ad
 - use stack to sort given data
 - given an positive integer list, find the min integer that is missing 
 - add two number without plus sign
+- square of mumber with using * or carrot sign
+  ```
+    def square(a):
+	    if a<;0:	
+	      b=-a
+	    else:
+	      b=a
+	    c=0
+	    while(b>;0):
+		    c += a; b-=1
+		
+	    if a<;0:
+		    c = -c
+	  return c
+  ```
 - There are several words in a file. Get the occurrence of every word and sort it based on the  occurrence, if more than one word is having same occurrence than sort it alphabetically.
   ```
   collector = {}
