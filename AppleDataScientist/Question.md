@@ -17,4 +17,5 @@ in a meaningful segments?
 - Why Apple
 - What do you like to do in next 5 years.
 - What is your life so far?
-- What do you like to do?  
+- What do you like to do?
+- If you could have one superpower, what would it be?
