@@ -3,6 +3,8 @@
 impact on the model training process itself
 - what's bias variance tradeoff
 - How is XGBoost handling bias-variance tradeoff?
+- what is random forest? why is naive bayes good?  
+- 
 - How do you take millions of users with 100's of transactions each, amongst 10k's of products and group the users together 
 in a meaningful segments? 
 [link1](https://www.glassdoor.com/Interview/How-do-you-take-millions-of-users-with-100-s-of-transactions-each-amongst-10k-s-of-products-and-group-the-users-together-i-QTN_548791.htm) 
@@ -10,6 +12,7 @@ in a meaningful segments?
 
 # Programming Python
 - find anagrams in a list and print out list of anagrams.
+- fibonacci sequence, recursive and iterative model with complexity analysis 
 - Set cover problem 
   [Wikipedia](https://en.wikipedia.org/wiki/Set_cover_problem) [geekforgeek](https://www.geeksforgeeks.org/set-cover-problem-set-1-greedy-approximate-algorithm/)
 
