@@ -47,14 +47,17 @@ in a meaningful segments?
 # sql and db
 - Create market basket output using SQL.
 - Given a table with 1B of user ID and product IDs that the users bought, and another table with product ID mapped with product name. We are trying to find the paired products that are often purchased together by the same user, such as wine and bottle opener, chips and beer. How to find the top 100 of these co-existed pairs of products?
+  ```
   Assuming that Every line in the input data contains user-id and list of product ids. 
-In the map phase, we will first extract all products purchased by a user and pair them up with the count.
-e.g. CUST_123, PROD_1, PROD2, PROD3
+  In the map phase, we will first extract all products purchased by a user and pair them up with the count.
+ 
+  e.g. CUST_123, PROD_1, PROD2, PROD3
 
-result of map phase.
-(PROD_1:PROD_2,1)
-(PROD_1:PROD_3,1)
-(PROD_2:PROD_3,1)
+  result of map phase.
+  (PROD_1:PROD_2,1)
+  (PROD_1:PROD_3,1)
+  (PROD_2:PROD_3,1)
+  ```
 
 In the reduce phase, we will collect all such results from all users and then add all counts and then return top 100.
 - Someone put distribute Random()*ID in a Hive script to prevent data skew. What would be the problem here?
