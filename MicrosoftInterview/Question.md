@@ -121,5 +121,42 @@ class Solution:
         root.right = self.sortedListToBST(tmp.next)
         return root
 ```
+- Delete node in BST
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def deleteNode(self, root, key):
+        """
+        :type root: TreeNode
+        :type key: int
+        :rtype: TreeNode
+        """
+        if root == None: return root
+        if root.val < key:
+            root.right = self.deleteNode(root.right, key)
+        elif root.val > key:
+            root.left = self.deleteNode(root.left, key)
+        else:
+            if root.left == None:
+                return root.right
+            if root.right == None:
+                return root.left
+            min = self.succ(root.right)
+            root.val = min.val
+            root.right = self.deleteNode(root.right, root.val)
+        
+        return root
+            
+    def succ(self, root):
+        if root.left == None:
+            return root
+        return self.succ(root.left)
+  ```      
 - Create a function that checks if a word is a palindrome  
 - Find max sum subsequence.
