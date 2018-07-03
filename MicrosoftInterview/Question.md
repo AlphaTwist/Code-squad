@@ -53,7 +53,34 @@ class Solution:
         second.next = second.next.next
         return dummy.next
 ```
-- convert binary search tree to sorted doubly linked list.
+- convert binary search tree to sorted doubly linked list. not doubly
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    #Recursion
+    head = None
+    def flatten(self, root):
+        """
+        :type root: TreeNode
+        :rtype: void Do not return anything, modify root in-place instead.
+        """
+        if root:
+            self.flatten(root.left)
+            self.flatten(root.right)
+            if root.left:
+                p = root.left
+                while p.right:
+                    p = p.right
+                p.right = root.right
+                root.right = root.left
+            root.left = None
+```
 - convert sorted linked list to BST
 ```python
 # Definition for singly-linked list.
