@@ -27,7 +27,7 @@
 ## Program
 - Find the maximum of sub sequence in an integer list. 
 - Given a infinite list, how can you find and then remove the second to last element in the list?
-```
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -55,7 +55,7 @@ class Solution:
 ```
 - convert binary search tree to sorted doubly linked list.
 - convert sorted linked list to BST
-```
+```python
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
