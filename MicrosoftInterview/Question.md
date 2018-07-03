@@ -27,6 +27,32 @@
 ## Program
 - Find the maximum of sub sequence in an integer list. 
 - Given a infinite list, how can you find and then remove the second to last element in the list?
+```
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+class Solution:
+    def removeNthFromEnd(self, head, n):
+        """
+        :type head: ListNode
+        :type n: int set n = 2
+        :rtype: ListNode
+        """
+        dummy = ListNode(0)
+        dummy.next = head
+        first = second = dummy
+        
+        #Advance first pointer so that the gap between first and secons is n nodes aprat
+        for i in range(n): first = first.next
+        while first.next :
+            first = first.next
+            second = second.next
+            
+        second.next = second.next.next
+        return dummy.next
+```
 - convert binary search tree to sorted doubly linked list.
 - Create a function that checks if a word is a palindrome  
 - Find max sum subsequence.
