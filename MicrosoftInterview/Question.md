@@ -158,5 +158,4 @@ class Solution:
             return root
         return self.succ(root.left)
   ```      
-- Create a function that checks if a word is a palindrome  
-- Find max sum subsequence.
+
