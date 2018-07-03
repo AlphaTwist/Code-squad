@@ -26,6 +26,21 @@
 
 ## Program
 - Find the maximum of sub sequence in an integer list. 
+```python
+class Solution(object):
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        cur = maxsum = nums[0]
+        
+        for num in nums[1:]:
+            cur = max( cur + num,num)
+            maxsum = max(cur, maxsum)
+            
+        return maxsum
+```
 - Given a infinite list, how can you find and then remove the second to last element in the list?
 ```python
 # Definition for singly-linked list.
